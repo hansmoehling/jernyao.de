@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Jern Yao 冷鍛多模成型機 — 德國、奧地利、瑞士獨家代理。">
+<title>Jern Yao 德語區</title>
+<link rel="alternate" hreflang="de" href="https://jernyao.de/">
+<link rel="alternate" hreflang="en" href="https://jernyao.de/en/">
+<link rel="alternate" hreflang="sl" href="https://jernyao.de/sl/">
+<link rel="alternate" hreflang="it" href="https://jernyao.de/it/">
+<link rel="alternate" hreflang="zh-Hant" href="https://jernyao.de/zh/">
+<link rel="stylesheet" href="../assets/fonts.css">
+<style>
+  /* Layout: eine ruhige Mittelspalte, Serifen tragen die Stimme, Grotesk traegt die Daten */
+  :root{
+    --paper:#ffffff;
+    --ink:#171b24;
+    --mid:#555b68;
+    --navy:#0b3390;
+    --navy-soft:#3a5cb0;
+    --hair:#dcdfe7;
+    --band:#f5f6f9;
+    --accent:#e05c00;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#10141f; --ink:#e7e9f0; --mid:#9aa1b0; --navy:#9db4ea;
+      --navy-soft:#7e97d4; --hair:#2a3040; --band:#161b28; --accent:#f0863d;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#10141f; --ink:#e7e9f0; --mid:#9aa1b0; --navy:#9db4ea;
+    --navy-soft:#7e97d4; --hair:#2a3040; --band:#161b28; --accent:#f0863d;
+    color-scheme: dark;
+  }
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif; font-weight:400;
+    padding-left:max(16px, env(safe-area-inset-left, 0px));
+    padding-right:max(16px, env(safe-area-inset-right, 0px));
+    padding-block:0;
+    line-height:1.6;
+  }
+  .wrap{ max-width:1020px; margin:0 auto; }
+  a{ color:var(--navy); text-decoration:none; }
+  a:hover{ text-decoration:underline; }
+  a:focus-visible, button:focus-visible{ outline:2px solid var(--navy-soft); outline-offset:2px; }
+
+  header{ border-bottom:1px solid var(--hair); }
+  .mast{
+    display:flex; justify-content:space-between; align-items:center; gap:16px;
+    padding-block:20px; flex-wrap:wrap;
+  }
+  .mast img{ height:30px; display:block; }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]) .mast img{ background:#fff; padding:3px 8px; border-radius:3px; }
+  }
+  :root[data-theme="dark"] .mast img{ background:#fff; padding:3px 8px; border-radius:3px; }
+  nav{ display:flex; gap:26px; flex-wrap:wrap; }
+  nav a{
+    font-size:12px; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--mid); font-weight:500;
+  }
+  nav a:hover{ color:var(--navy); text-decoration:none; }
+
+  .hero{ display:block; padding-block:64px 56px; }
+  .hero-text{ min-width:0; }
+  h1{
+    font-family:'EB Garamond',Georgia,serif; font-weight:560; text-wrap:balance;
+    font-size:clamp(30px, 4.6vw, 46px); line-height:1.1; color:var(--navy); margin:0;
+  }
+  .subline{
+    font-family:'EB Garamond',Georgia,serif; font-style:italic;
+    font-size:clamp(16px,2vw,19px); color:var(--mid); margin-top:12px;
+  }
+  .lede{ margin-top:28px; max-width:64ch; }
+  .lede p{ margin:0 0 14px 0; font-size:15.5px; }
+  .lede strong{ font-weight:500; }
+  .hero-img{
+    float:right; width:min(340px, 40%); margin:8px 0 20px 44px;
+  }
+  .hero-img img{
+    width:100%; max-width:100%; display:block; opacity:.88;
+    mask-image:linear-gradient(180deg, #000 78%, rgba(0,0,0,.25) 100%);
+    -webkit-mask-image:linear-gradient(180deg, #000 78%, rgba(0,0,0,.25) 100%);
+  }
+  .cap{ font-size:11px; color:var(--mid); margin-top:6px; }
+  .hero::after{ content:''; display:block; clear:both; }
+  @media (max-width:700px){
+    .hero-img{ float:none; width:100%; margin:0 0 24px 0; }
+  }
+
+  section{ border-top:1px solid var(--hair); padding-block:52px 56px; }
+  .eyebrow{
+    font-size:11.5px; letter-spacing:0.18em; text-transform:uppercase;
+    color:var(--mid); font-weight:500;
+  }
+  h2{
+    font-family:'EB Garamond',Georgia,serif; font-weight:560; text-wrap:balance;
+    font-size:clamp(24px,3vw,32px); color:var(--navy); margin:8px 0 0 0;
+  }
+  .rule{ width:44px; height:2px; background:var(--accent); margin-top:14px; }
+  .section-lede{ max-width:62ch; margin-top:20px; font-size:15px; }
+
+  .tablewrap{ overflow-x:auto; margin-top:32px; }
+  table{ width:100%; border-collapse:collapse; min-width:640px; }
+  th{
+    font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--mid);
+    font-weight:500; text-align:left; padding:0 18px 10px 0; border-bottom:1.5px solid var(--ink);
+  }
+  td{
+    font-size:14.5px; padding:14px 18px 14px 0; border-bottom:1px solid var(--hair);
+    vertical-align:baseline; font-variant-numeric:tabular-nums;
+  }
+  td.series{ font-family:'EB Garamond',Georgia,serif; font-weight:600; font-size:17px; color:var(--navy); white-space:nowrap; }
+  td .sub{ font-family:'Inter',sans-serif; font-weight:400; font-size:12px; color:var(--mid); margin-left:8px; }
+  .note{ font-size:12px; color:var(--mid); margin-top:12px; }
+
+  .cols{ display:flex; gap:48px; margin-top:28px; flex-wrap:wrap; }
+  .col{ flex:1 1 320px; min-width:0; }
+  h3{
+    font-family:'EB Garamond',Georgia,serif; font-weight:560;
+    font-size:20px; color:var(--ink); margin:0 0 12px 0;
+  }
+  .col ul{ list-style:none; margin:0; padding:0; }
+  .col li{
+    font-size:14.5px; padding-left:18px; position:relative; margin-bottom:12px;
+  }
+  .col li::before{
+    content:''; position:absolute; left:0; top:0.62em; width:8px; height:1.5px; background:var(--navy);
+  }
+
+  .kontakt{ background:var(--band); border-top:1px solid var(--hair); }
+  .kontakt-inner{ display:flex; gap:48px; flex-wrap:wrap; padding-block:52px 56px; }
+  .kontakt .who{ flex:1 1 300px; min-width:0; }
+  .kname{ font-family:'EB Garamond',Georgia,serif; font-weight:600; font-size:26px; color:var(--ink); }
+  .krole{ font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; color:var(--mid); margin-top:6px; font-weight:500; }
+  .kfacts{ font-size:13px; color:var(--mid); margin-top:14px; max-width:48ch; }
+  .klines{ flex:1 1 300px; min-width:0; font-size:15.5px; line-height:2; }
+  .klines b{ font-weight:500; color:var(--navy); user-select:all; }
+  .klines .tel{ user-select:all; }
+
+  .chrono{
+    display:flex; gap:40px; flex-wrap:wrap; margin-top:36px;
+    border-top:1px solid var(--hair); padding-top:24px;
+  }
+  .chrono div{ min-width:0; }
+  .chrono b{
+    display:block; font-family:'EB Garamond',Georgia,serif; font-weight:600;
+    font-size:22px; color:var(--navy); font-variant-numeric:tabular-nums;
+  }
+  .chrono span{ display:block; font-size:12.5px; color:var(--mid); margin-top:3px; max-width:24ch; }
+
+  footer{ border-top:1px solid var(--hair); }
+  .foot-inner{
+    display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap;
+    padding-block:24px 28px; font-size:12px; color:var(--mid);
+  }
+  footer details{ max-width:70ch; }
+  footer summary{ cursor:pointer; color:var(--navy); font-weight:500; }
+  footer details p{ margin:10px 0; }
+  .legal{ padding-bottom:36px; display:flex; flex-direction:column; gap:14px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap mast">
+    <img src="../assets/logo.png" alt="Jern Yao">
+    <nav>
+      <a href="#programm">產品</a>
+      <a href="#technik">技術</a>
+      <a href="#vertretung">代理</a>
+      <a href="#herkunft">沿革</a>
+      <a href="#kontakt">聯絡</a>
+      <a href="../" onclick="try{localStorage.setItem('jy-lang','de')}catch(e){}">DE</a>
+      <a href="../en/" onclick="try{localStorage.setItem('jy-lang','en')}catch(e){}">EN</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="hero-img">
+      <img src="../assets/umformraum.jpg" alt="Jern Yao 多模成型機的模具區:工位與移送機構">
+      <div class="cap">多模成型機模具區一瞥。</div>
+    </div>
+    <div class="hero-text">
+      <h1>冷鍛多模成型機</h1>
+      <div class="subline">Bolt Formers &middot; Nut Formers &middot; Parts Formers &mdash; Jern Yao,台南</div>
+      <div class="lede">
+        <p>Jern Yao 製造的多模成型機兼得兩者:大廠的精度,與能在單件成本中回收的價格。全球超過 40 個國家、5,300 餘台設備依此原則運轉;零組件加工、組裝與電控皆於台南自廠完成。</p>
+        <p>主力是 JBF 螺栓成型機&mdash;&mdash;以三模、四模機型成長為對美國 Boltmaker 的回應,是螺絲廠的日常主力機。頂端則是長衝程 JBP 與短衝程 JNP,最多七模、壓造力達 930 噸,為複雜成型件而生。</p>
+        <p>德語區市場由 <strong>Hans Moehling</strong> 獨家代理:諮詢、規劃、備品與技術釐清,與台南直接對接。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="programm">
+  <div class="wrap">
+    <div class="eyebrow">產品系列</div>
+    <h2>三大系列,同一原則</h2>
+    <div class="rule"></div>
+    <p class="section-lede">從二模螺絲胚到七模成型件:各系列以精細分級的機型涵蓋其範圍,全程公制設計。</p>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th>系列</th><th>模數</th><th>最大切斷直徑</th><th>範圍</th><th>產能</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="series">JBF<span class="sub">螺栓成型機</span></td>
+            <td>2&ndash;6</td><td>3&ndash;42 mm</td><td>M3&ndash;M30,切斷長度至 480 mm</td><td>至 300 min<sup>&minus;1</sup></td>
+          </tr>
+          <tr>
+            <td class="series">JBP &middot; JNP &middot; JPF<span class="sub">零件成型機</span></td>
+            <td>5&ndash;7</td><td>7&ndash;45 mm</td><td>切斷長度至 450 mm,壓造力至 930 噸</td><td>至 320 min<sup>&minus;1</sup></td>
+          </tr>
+          <tr>
+            <td class="series">JNF &middot; JNL &middot; JNFP &middot; JNFR<span class="sub">螺帽成型機</span></td>
+            <td>5&ndash;6</td><td>8&ndash;46 mm</td><td>M3&ndash;M33,亦有長衝程機型</td><td>至 450 min<sup>&minus;1</sup></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">規格依原廠資料;以各機型之型錄為準。型錄備索。</div>
+  </div>
+</section>
+
+<section id="technik">
+  <div class="wrap">
+    <div class="eyebrow">技術</div>
+    <h2>為連續運轉而生</h2>
+    <div class="rule"></div>
+    <div class="cols">
+      <div class="col">
+        <h3>模具區</h3>
+        <ul>
+          <li>QTC 快速換模系統:衝模與母模模塊於機外整備與預調。</li>
+          <li>頂出與擋料以 0.01&nbsp;mm 級微調;HMI 具馬達化參數調整。</li>
+          <li>換模吊運方案:整組模塊或單支模具。</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>廠內</h3>
+        <ul>
+          <li>以 DEFORM-2D/3D 成形模擬與機架 FEM 分析進行設計。</li>
+          <li>台南全深度自製:零組件加工、組裝與電控皆在自廠&mdash;&mdash;核心件以自有五面加工中心製作。</li>
+          <li>關鍵電氣元件來自德國、日本與美國;ISO 9001,CE(T&Uuml;V Nord)。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="vertretung">
+  <div class="wrap">
+    <div class="eyebrow">代理</div>
+    <h2>一個窗口,一條管道</h2>
+    <div class="rule"></div>
+    <div class="cols">
+      <div class="col">
+        <p class="section-lede" style="margin-top:0">規劃與報價、技術釐清不繞路:詢問由此直達台南設計部門,回覆經確認後送回。備品與服務案件走同一條路,一手統籌。代理授權以德語區為範圍;從他方尋路而來者,亦不會被拒之門外。</p>
+      </div>
+      <div class="col">
+        <ul>
+          <li>來自冷鍛現場實務的諮詢,從佈局到驗收。</li>
+          <li>試車與服務,統籌安排。</li>
+          <li>運轉中設備可洽約參觀。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="herkunft">
+  <div class="wrap">
+    <div class="eyebrow">沿革</div>
+    <h2>淵源</h2>
+    <div class="rule"></div>
+    <p class="section-lede">這段淵源始於 1982 年:Moehling 將當時仍以「同光」(Tung Kuang) 為名的這些機器引進歐洲,並伴隨其走向今日的成熟。這份工作在此延續。</p>
+    <div class="chrono">
+      <div><b>1977</b><span>同光 (Tung Kuang),台南:TK 品牌首批機器</span></div>
+      <div><b>1982</b><span>Moehling 將機器引進歐洲</span></div>
+      <div><b>1993</b><span>正曜企業股份有限公司 (Jern Yao Enterprises) 於台南成立</span></div>
+      <div><b>今日</b><span>超過 40 國、5,300 餘台</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="kontakt" id="kontakt">
+  <div class="wrap kontakt-inner">
+    <div class="who">
+      <div class="kname">Hans Moehling</div>
+      <div class="krole">Jern Yao 德語區獨家代理</div>
+      <div class="kfacts">正曜企業股份有限公司 Jern Yao Enterprises Co., Ltd. &middot; 1993 年創立,台灣台南 &middot; ISO 9001 &middot; CE</div>
+    </div>
+    <div class="klines">
+      <b>info@jernyao.de</b><br>
+      <span class="tel">+49&nbsp;171&nbsp;10&nbsp;700&nbsp;10</span><br>
+      LinkedIn: <a href="https://www.linkedin.com/in/hans-m%C3%B6hling-562737443/" rel="noopener">Hans Moehling</a><br>
+      原廠:<a href="https://www.jernyao.com" rel="noopener">jernyao.com</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-inner">
+    <div>Jern Yao 德語區代理 &middot; techno.parts</div>
+  </div>
+  <div class="wrap legal">
+    <details id="impressum">
+      <summary>法律聲明</summary>
+      <p>Hans Moehling &middot; Jern Yao Enterprises Co., Ltd. 德國、奧地利與瑞士獨家代理。<br>
+      電子郵件:jernyao@techno.parts &middot; 電話:+49 171 10 700 10</p>
+    </details>
+    <details id="datenschutz">
+      <summary>隱私聲明</summary>
+      <p>本網站不使用 Cookie、不使用分析工具、不蒐集個人資料。瀏覽時,主機服務商基於營運安全記錄技術上必要的存取日誌(IP 位址、時間、所請求頁面)。來信聯絡時,所提供之資料僅用於處理該詢問。</p>
+    </details>
+  </div>
+</footer>
+
+</body>
+</html>

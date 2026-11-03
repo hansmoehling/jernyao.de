@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Presse multistazione Jern Yao per lo stampaggio a freddo — rappresentanza esclusiva per Germania, Austria e Svizzera.">
+<title>Jern Yao nell&rsquo;area di lingua tedesca</title>
+<link rel="alternate" hreflang="de" href="https://jernyao.de/">
+<link rel="alternate" hreflang="en" href="https://jernyao.de/en/">
+<link rel="alternate" hreflang="sl" href="https://jernyao.de/sl/">
+<link rel="alternate" hreflang="it" href="https://jernyao.de/it/">
+<link rel="alternate" hreflang="zh-Hant" href="https://jernyao.de/zh/">
+<link rel="stylesheet" href="../assets/fonts.css">
+<style>
+  /* Layout: eine ruhige Mittelspalte, Serifen tragen die Stimme, Grotesk traegt die Daten */
+  :root{
+    --paper:#ffffff;
+    --ink:#171b24;
+    --mid:#555b68;
+    --navy:#0b3390;
+    --navy-soft:#3a5cb0;
+    --hair:#dcdfe7;
+    --band:#f5f6f9;
+    --accent:#e05c00;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#10141f; --ink:#e7e9f0; --mid:#9aa1b0; --navy:#9db4ea;
+      --navy-soft:#7e97d4; --hair:#2a3040; --band:#161b28; --accent:#f0863d;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#10141f; --ink:#e7e9f0; --mid:#9aa1b0; --navy:#9db4ea;
+    --navy-soft:#7e97d4; --hair:#2a3040; --band:#161b28; --accent:#f0863d;
+    color-scheme: dark;
+  }
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif; font-weight:400;
+    padding-left:max(16px, env(safe-area-inset-left, 0px));
+    padding-right:max(16px, env(safe-area-inset-right, 0px));
+    padding-block:0;
+    line-height:1.6;
+  }
+  .wrap{ max-width:1020px; margin:0 auto; }
+  a{ color:var(--navy); text-decoration:none; }
+  a:hover{ text-decoration:underline; }
+  a:focus-visible, button:focus-visible{ outline:2px solid var(--navy-soft); outline-offset:2px; }
+
+  header{ border-bottom:1px solid var(--hair); }
+  .mast{
+    display:flex; justify-content:space-between; align-items:center; gap:16px;
+    padding-block:20px; flex-wrap:wrap;
+  }
+  .mast img{ height:30px; display:block; }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]) .mast img{ background:#fff; padding:3px 8px; border-radius:3px; }
+  }
+  :root[data-theme="dark"] .mast img{ background:#fff; padding:3px 8px; border-radius:3px; }
+  nav{ display:flex; gap:26px; flex-wrap:wrap; }
+  nav a{
+    font-size:12px; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--mid); font-weight:500;
+  }
+  nav a:hover{ color:var(--navy); text-decoration:none; }
+
+  .hero{ display:block; padding-block:64px 56px; }
+  .hero-text{ min-width:0; }
+  h1{
+    font-family:'EB Garamond',Georgia,serif; font-weight:560; text-wrap:balance;
+    font-size:clamp(30px, 4.6vw, 46px); line-height:1.1; color:var(--navy); margin:0;
+  }
+  .subline{
+    font-family:'EB Garamond',Georgia,serif; font-style:italic;
+    font-size:clamp(16px,2vw,19px); color:var(--mid); margin-top:12px;
+  }
+  .lede{ margin-top:28px; max-width:64ch; }
+  .lede p{ margin:0 0 14px 0; font-size:15.5px; }
+  .lede strong{ font-weight:500; }
+  .hero-img{
+    float:right; width:min(340px, 40%); margin:8px 0 20px 44px;
+  }
+  .hero-img img{
+    width:100%; max-width:100%; display:block; opacity:.88;
+    mask-image:linear-gradient(180deg, #000 78%, rgba(0,0,0,.25) 100%);
+    -webkit-mask-image:linear-gradient(180deg, #000 78%, rgba(0,0,0,.25) 100%);
+  }
+  .cap{ font-size:11px; color:var(--mid); margin-top:6px; }
+  .hero::after{ content:''; display:block; clear:both; }
+  @media (max-width:700px){
+    .hero-img{ float:none; width:100%; margin:0 0 24px 0; }
+  }
+
+  section{ border-top:1px solid var(--hair); padding-block:52px 56px; }
+  .eyebrow{
+    font-size:11.5px; letter-spacing:0.18em; text-transform:uppercase;
+    color:var(--mid); font-weight:500;
+  }
+  h2{
+    font-family:'EB Garamond',Georgia,serif; font-weight:560; text-wrap:balance;
+    font-size:clamp(24px,3vw,32px); color:var(--navy); margin:8px 0 0 0;
+  }
+  .rule{ width:44px; height:2px; background:var(--accent); margin-top:14px; }
+  .section-lede{ max-width:62ch; margin-top:20px; font-size:15px; }
+
+  .tablewrap{ overflow-x:auto; margin-top:32px; }
+  table{ width:100%; border-collapse:collapse; min-width:640px; }
+  th{
+    font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--mid);
+    font-weight:500; text-align:left; padding:0 18px 10px 0; border-bottom:1.5px solid var(--ink);
+  }
+  td{
+    font-size:14.5px; padding:14px 18px 14px 0; border-bottom:1px solid var(--hair);
+    vertical-align:baseline; font-variant-numeric:tabular-nums;
+  }
+  td.series{ font-family:'EB Garamond',Georgia,serif; font-weight:600; font-size:17px; color:var(--navy); white-space:nowrap; }
+  td .sub{ font-family:'Inter',sans-serif; font-weight:400; font-size:12px; color:var(--mid); margin-left:8px; }
+  .note{ font-size:12px; color:var(--mid); margin-top:12px; }
+
+  .cols{ display:flex; gap:48px; margin-top:28px; flex-wrap:wrap; }
+  .col{ flex:1 1 320px; min-width:0; }
+  h3{
+    font-family:'EB Garamond',Georgia,serif; font-weight:560;
+    font-size:20px; color:var(--ink); margin:0 0 12px 0;
+  }
+  .col ul{ list-style:none; margin:0; padding:0; }
+  .col li{
+    font-size:14.5px; padding-left:18px; position:relative; margin-bottom:12px;
+  }
+  .col li::before{
+    content:''; position:absolute; left:0; top:0.62em; width:8px; height:1.5px; background:var(--navy);
+  }
+
+  .kontakt{ background:var(--band); border-top:1px solid var(--hair); }
+  .kontakt-inner{ display:flex; gap:48px; flex-wrap:wrap; padding-block:52px 56px; }
+  .kontakt .who{ flex:1 1 300px; min-width:0; }
+  .kname{ font-family:'EB Garamond',Georgia,serif; font-weight:600; font-size:26px; color:var(--ink); }
+  .krole{ font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; color:var(--mid); margin-top:6px; font-weight:500; }
+  .kfacts{ font-size:13px; color:var(--mid); margin-top:14px; max-width:48ch; }
+  .klines{ flex:1 1 300px; min-width:0; font-size:15.5px; line-height:2; }
+  .klines b{ font-weight:500; color:var(--navy); user-select:all; }
+  .klines .tel{ user-select:all; }
+
+  .chrono{
+    display:flex; gap:40px; flex-wrap:wrap; margin-top:36px;
+    border-top:1px solid var(--hair); padding-top:24px;
+  }
+  .chrono div{ min-width:0; }
+  .chrono b{
+    display:block; font-family:'EB Garamond',Georgia,serif; font-weight:600;
+    font-size:22px; color:var(--navy); font-variant-numeric:tabular-nums;
+  }
+  .chrono span{ display:block; font-size:12.5px; color:var(--mid); margin-top:3px; max-width:24ch; }
+
+  footer{ border-top:1px solid var(--hair); }
+  .foot-inner{
+    display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap;
+    padding-block:24px 28px; font-size:12px; color:var(--mid);
+  }
+  footer details{ max-width:70ch; }
+  footer summary{ cursor:pointer; color:var(--navy); font-weight:500; }
+  footer details p{ margin:10px 0; }
+  .legal{ padding-bottom:36px; display:flex; flex-direction:column; gap:14px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap mast">
+    <img src="../assets/logo.png" alt="Jern Yao">
+    <nav>
+      <a href="#programm">Programma</a>
+      <a href="#technik">Tecnica</a>
+      <a href="#vertretung">Rappresentanza</a>
+      <a href="#herkunft">Origini</a>
+      <a href="#kontakt">Contatto</a>
+      <a href="../" onclick="try{localStorage.setItem('jy-lang','de')}catch(e){}">DE</a>
+      <a href="../en/" onclick="try{localStorage.setItem('jy-lang','en')}catch(e){}">EN</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="hero-img">
+      <img src="../assets/umformraum.jpg" alt="Vano stampi di una pressa multistazione Jern Yao: stazioni utensile e trasferitore">
+      <div class="cap">Uno sguardo nel vano stampi di una pressa multistazione.</div>
+    </div>
+    <div class="hero-text">
+      <h1>Presse multistazione per lo stampaggio a freddo</h1>
+      <div class="subline">Bolt Formers &middot; Nut Formers &middot; Parts Formers &mdash; Jern Yao, Tainan</div>
+      <div class="lede">
+        <p>Jern Yao costruisce presse multistazione che sanno fare entrambe le cose: la precisione dei grandi nomi e un prezzo che si ripaga nel costo del pezzo. Pi&ugrave; di 5.300 macchine in oltre 40 paesi lavorano secondo questo principio; lavorazione dei componenti, montaggio ed elettrica nascono interamente nello stabilimento di Tainan.</p>
+        <p>La spina dorsale sono le presse per viti JBF, cresciute a tre e quattro stazioni come risposta al Boltmaker americano: le macchine di tutti i giorni delle viterie. Al vertice stanno le JBP a corsa lunga e le JNP a corsa corta, fino a sette stazioni e 930 tonnellate di forza di stampaggio, costruite per il pezzo complesso.</p>
+        <p>Per il mercato di lingua tedesca <strong>Hans Moehling</strong> rappresenta in esclusiva la fabbrica: consulenza, progettazione, ricambi e chiarimenti tecnici, in un canale diretto con Tainan.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="programm">
+  <div class="wrap">
+    <div class="eyebrow">Il programma</div>
+    <h2>Tre serie, un principio</h2>
+    <div class="rule"></div>
+    <p class="section-lede">Dal grezzo a due stazioni al pezzo stampato a sette stazioni: ogni serie copre il suo campo in taglie macchina finemente graduate, progettate interamente in metrico.</p>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Serie</th><th>Stazioni</th><th>&Oslash; di taglio</th><th>Campo</th><th>Colpi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="series">JBF<span class="sub">Bolt Formers</span></td>
+            <td>2&ndash;6</td><td>3&ndash;42 mm</td><td>M3&ndash;M30, lunghezza di taglio fino a 480 mm</td><td>fino a 300 min<sup>&minus;1</sup></td>
+          </tr>
+          <tr>
+            <td class="series">JBP &middot; JNP &middot; JPF<span class="sub">Parts Formers</span></td>
+            <td>5&ndash;7</td><td>7&ndash;45 mm</td><td>Lunghezza di taglio fino a 450 mm, forza fino a 930 t</td><td>fino a 320 min<sup>&minus;1</sup></td>
+          </tr>
+          <tr>
+            <td class="series">JNF &middot; JNL &middot; JNFP &middot; JNFR<span class="sub">Nut Formers</span></td>
+            <td>5&ndash;6</td><td>8&ndash;46 mm</td><td>M3&ndash;M33, anche versioni long-stroke</td><td>fino a 450 min<sup>&minus;1</sup></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">Valori secondo dati di fabbrica; fa fede la scheda tecnica del singolo modello. Schede tecniche su richiesta.</div>
+  </div>
+</section>
+
+<section id="technik">
+  <div class="wrap">
+    <div class="eyebrow">Tecnica</div>
+    <h2>Costruite per il servizio continuo</h2>
+    <div class="rule"></div>
+    <div class="cols">
+      <div class="col">
+        <h3>Nel vano stampi</h3>
+        <ul>
+          <li>Sistema di cambio rapido QTC: i blocchi punzoni e matrici si preparano e si preregolano fuori macchina.</li>
+          <li>Regolazione fine di estrattore e battuta a passi di 0,01&nbsp;mm; HMI con regolazione motorizzata dei parametri.</li>
+          <li>Soluzioni con gru per il cambio stampi: blocco completo o utensile singolo.</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>In fabbrica</h3>
+        <ul>
+          <li>Progettazione con simulazione di stampaggio DEFORM-2D/3D e analisi FEM del bancale.</li>
+          <li>Piena profondit&agrave; produttiva a Tainan: lavorazione dei componenti, montaggio ed elettrica in casa, senza terzisti &mdash; i componenti chiave su centri di fresatura a cinque facce propri.</li>
+          <li>Componenti elettrici chiave da Germania, Giappone e USA; ISO 9001, CE (T&Uuml;V Nord).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="vertretung">
+  <div class="wrap">
+    <div class="eyebrow">Rappresentanza</div>
+    <h2>Un interlocutore, un canale</h2>
+    <div class="rule"></div>
+    <div class="cols">
+      <div class="col">
+        <p class="section-lede" style="margin-top:0">Progettazione e offerta, chiarimenti tecnici senza deviazioni: le richieste vanno da qui direttamente all&rsquo;ufficio tecnico di Tainan, le risposte tornano verificate. Ricambi e casi di assistenza seguono la stessa via, coordinati da un&rsquo;unica mano. Il mandato vale per l&rsquo;area di lingua tedesca; chi trova la strada fin qui da altrove non per questo viene respinto.</p>
+      </div>
+      <div class="col">
+        <ul>
+          <li>Consulenza dalla pratica di officina dello stampaggio a freddo, dal layout al collaudo.</li>
+          <li>Messa in servizio e assistenza, coordinate da un&rsquo;unica mano.</li>
+          <li>Visita di macchine in produzione su appuntamento.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="herkunft">
+  <div class="wrap">
+    <div class="eyebrow">Origini</div>
+    <h2>Come &egrave; nata</h2>
+    <div class="rule"></div>
+    <p class="section-lede">Il legame risale al 1982: Moehling port&ograve; queste macchine, allora ancora con il nome Tung Kuang, in Europa e ne accompagn&ograve; il cammino fino alla maturit&agrave; di oggi. Quel lavoro continua qui.</p>
+    <div class="chrono">
+      <div><b>1977</b><span>Tung Kuang, Tainan: prime macchine con il marchio TK</span></div>
+      <div><b>1982</b><span>Moehling porta le macchine in Europa</span></div>
+      <div><b>1993</b><span>fondazione di Jern Yao Enterprises, Tainan</span></div>
+      <div><b>Oggi</b><span>pi&ugrave; di 5.300 macchine in oltre 40 paesi</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="kontakt" id="kontakt">
+  <div class="wrap kontakt-inner">
+    <div class="who">
+      <div class="kname">Hans Moehling</div>
+      <div class="krole">Rappresentanza esclusiva Jern Yao &middot; area di lingua tedesca</div>
+      <div class="kfacts">Jern Yao Enterprises Co., Ltd. &middot; fondata nel 1993, Tainan, Taiwan &middot; ISO 9001 &middot; CE</div>
+    </div>
+    <div class="klines">
+      <b>info@jernyao.de</b><br>
+      <span class="tel">+49&nbsp;171&nbsp;10&nbsp;700&nbsp;10</span><br>
+      LinkedIn: <a href="https://www.linkedin.com/in/hans-m%C3%B6hling-562737443/" rel="noopener">Hans Moehling</a><br>
+      Stabilimento: <a href="https://www.jernyao.com" rel="noopener">jernyao.com</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-inner">
+    <div>Rappresentanza Jern Yao per l&rsquo;area di lingua tedesca &middot; techno.parts</div>
+  </div>
+  <div class="wrap legal">
+    <details id="impressum">
+      <summary>Note legali</summary>
+      <p>Hans Moehling &middot; Rappresentanza esclusiva di Jern Yao Enterprises Co., Ltd. per Germania, Austria e Svizzera.<br>
+      E-mail: jernyao@techno.parts &middot; Telefono: +49 171 10 700 10</p>
+    </details>
+    <details id="datenschutz">
+      <summary>Privacy</summary>
+      <p>Questo sito non usa cookie, non impiega strumenti di analisi e non raccoglie dati personali. Alla consultazione il provider di hosting registra i log di accesso tecnicamente necessari (indirizzo IP, orario, pagina richiesta) a fini di sicurezza operativa. In caso di contatto via e-mail, i dati trasmessi sono usati esclusivamente per evadere la richiesta.</p>
+    </details>
+  </div>
+</footer>
+
+</body>
+</html>

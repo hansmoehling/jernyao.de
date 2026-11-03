@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="sl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Večstopenjske stiskalnice Jern Yao za hladno preoblikovanje — ekskluzivno zastopstvo za Nemčijo, Avstrijo in Švico.">
+<title>Jern Yao v nemškem govornem prostoru</title>
+<link rel="alternate" hreflang="de" href="https://jernyao.de/">
+<link rel="alternate" hreflang="en" href="https://jernyao.de/en/">
+<link rel="alternate" hreflang="sl" href="https://jernyao.de/sl/">
+<link rel="alternate" hreflang="it" href="https://jernyao.de/it/">
+<link rel="alternate" hreflang="zh-Hant" href="https://jernyao.de/zh/">
+<link rel="stylesheet" href="../assets/fonts.css">
+<style>
+  /* Layout: eine ruhige Mittelspalte, Serifen tragen die Stimme, Grotesk traegt die Daten */
+  :root{
+    --paper:#ffffff;
+    --ink:#171b24;
+    --mid:#555b68;
+    --navy:#0b3390;
+    --navy-soft:#3a5cb0;
+    --hair:#dcdfe7;
+    --band:#f5f6f9;
+    --accent:#e05c00;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#10141f; --ink:#e7e9f0; --mid:#9aa1b0; --navy:#9db4ea;
+      --navy-soft:#7e97d4; --hair:#2a3040; --band:#161b28; --accent:#f0863d;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#10141f; --ink:#e7e9f0; --mid:#9aa1b0; --navy:#9db4ea;
+    --navy-soft:#7e97d4; --hair:#2a3040; --band:#161b28; --accent:#f0863d;
+    color-scheme: dark;
+  }
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif; font-weight:400;
+    padding-left:max(16px, env(safe-area-inset-left, 0px));
+    padding-right:max(16px, env(safe-area-inset-right, 0px));
+    padding-block:0;
+    line-height:1.6;
+  }
+  .wrap{ max-width:1020px; margin:0 auto; }
+  a{ color:var(--navy); text-decoration:none; }
+  a:hover{ text-decoration:underline; }
+  a:focus-visible, button:focus-visible{ outline:2px solid var(--navy-soft); outline-offset:2px; }
+
+  header{ border-bottom:1px solid var(--hair); }
+  .mast{
+    display:flex; justify-content:space-between; align-items:center; gap:16px;
+    padding-block:20px; flex-wrap:wrap;
+  }
+  .mast img{ height:30px; display:block; }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]) .mast img{ background:#fff; padding:3px 8px; border-radius:3px; }
+  }
+  :root[data-theme="dark"] .mast img{ background:#fff; padding:3px 8px; border-radius:3px; }
+  nav{ display:flex; gap:26px; flex-wrap:wrap; }
+  nav a{
+    font-size:12px; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--mid); font-weight:500;
+  }
+  nav a:hover{ color:var(--navy); text-decoration:none; }
+
+  .hero{ display:block; padding-block:64px 56px; }
+  .hero-text{ min-width:0; }
+  h1{
+    font-family:'EB Garamond',Georgia,serif; font-weight:560; text-wrap:balance;
+    font-size:clamp(30px, 4.6vw, 46px); line-height:1.1; color:var(--navy); margin:0;
+  }
+  .subline{
+    font-family:'EB Garamond',Georgia,serif; font-style:italic;
+    font-size:clamp(16px,2vw,19px); color:var(--mid); margin-top:12px;
+  }
+  .lede{ margin-top:28px; max-width:64ch; }
+  .lede p{ margin:0 0 14px 0; font-size:15.5px; }
+  .lede strong{ font-weight:500; }
+  .hero-img{
+    float:right; width:min(340px, 40%); margin:8px 0 20px 44px;
+  }
+  .hero-img img{
+    width:100%; max-width:100%; display:block; opacity:.88;
+    mask-image:linear-gradient(180deg, #000 78%, rgba(0,0,0,.25) 100%);
+    -webkit-mask-image:linear-gradient(180deg, #000 78%, rgba(0,0,0,.25) 100%);
+  }
+  .cap{ font-size:11px; color:var(--mid); margin-top:6px; }
+  .hero::after{ content:''; display:block; clear:both; }
+  @media (max-width:700px){
+    .hero-img{ float:none; width:100%; margin:0 0 24px 0; }
+  }
+
+  section{ border-top:1px solid var(--hair); padding-block:52px 56px; }
+  .eyebrow{
+    font-size:11.5px; letter-spacing:0.18em; text-transform:uppercase;
+    color:var(--mid); font-weight:500;
+  }
+  h2{
+    font-family:'EB Garamond',Georgia,serif; font-weight:560; text-wrap:balance;
+    font-size:clamp(24px,3vw,32px); color:var(--navy); margin:8px 0 0 0;
+  }
+  .rule{ width:44px; height:2px; background:var(--accent); margin-top:14px; }
+  .section-lede{ max-width:62ch; margin-top:20px; font-size:15px; }
+
+  .tablewrap{ overflow-x:auto; margin-top:32px; }
+  table{ width:100%; border-collapse:collapse; min-width:640px; }
+  th{
+    font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--mid);
+    font-weight:500; text-align:left; padding:0 18px 10px 0; border-bottom:1.5px solid var(--ink);
+  }
+  td{
+    font-size:14.5px; padding:14px 18px 14px 0; border-bottom:1px solid var(--hair);
+    vertical-align:baseline; font-variant-numeric:tabular-nums;
+  }
+  td.series{ font-family:'EB Garamond',Georgia,serif; font-weight:600; font-size:17px; color:var(--navy); white-space:nowrap; }
+  td .sub{ font-family:'Inter',sans-serif; font-weight:400; font-size:12px; color:var(--mid); margin-left:8px; }
+  .note{ font-size:12px; color:var(--mid); margin-top:12px; }
+
+  .cols{ display:flex; gap:48px; margin-top:28px; flex-wrap:wrap; }
+  .col{ flex:1 1 320px; min-width:0; }
+  h3{
+    font-family:'EB Garamond',Georgia,serif; font-weight:560;
+    font-size:20px; color:var(--ink); margin:0 0 12px 0;
+  }
+  .col ul{ list-style:none; margin:0; padding:0; }
+  .col li{
+    font-size:14.5px; padding-left:18px; position:relative; margin-bottom:12px;
+  }
+  .col li::before{
+    content:''; position:absolute; left:0; top:0.62em; width:8px; height:1.5px; background:var(--navy);
+  }
+
+  .kontakt{ background:var(--band); border-top:1px solid var(--hair); }
+  .kontakt-inner{ display:flex; gap:48px; flex-wrap:wrap; padding-block:52px 56px; }
+  .kontakt .who{ flex:1 1 300px; min-width:0; }
+  .kname{ font-family:'EB Garamond',Georgia,serif; font-weight:600; font-size:26px; color:var(--ink); }
+  .krole{ font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; color:var(--mid); margin-top:6px; font-weight:500; }
+  .kfacts{ font-size:13px; color:var(--mid); margin-top:14px; max-width:48ch; }
+  .klines{ flex:1 1 300px; min-width:0; font-size:15.5px; line-height:2; }
+  .klines b{ font-weight:500; color:var(--navy); user-select:all; }
+  .klines .tel{ user-select:all; }
+
+  .chrono{
+    display:flex; gap:40px; flex-wrap:wrap; margin-top:36px;
+    border-top:1px solid var(--hair); padding-top:24px;
+  }
+  .chrono div{ min-width:0; }
+  .chrono b{
+    display:block; font-family:'EB Garamond',Georgia,serif; font-weight:600;
+    font-size:22px; color:var(--navy); font-variant-numeric:tabular-nums;
+  }
+  .chrono span{ display:block; font-size:12.5px; color:var(--mid); margin-top:3px; max-width:24ch; }
+
+  footer{ border-top:1px solid var(--hair); }
+  .foot-inner{
+    display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap;
+    padding-block:24px 28px; font-size:12px; color:var(--mid);
+  }
+  footer details{ max-width:70ch; }
+  footer summary{ cursor:pointer; color:var(--navy); font-weight:500; }
+  footer details p{ margin:10px 0; }
+  .legal{ padding-bottom:36px; display:flex; flex-direction:column; gap:14px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap mast">
+    <img src="../assets/logo.png" alt="Jern Yao">
+    <nav>
+      <a href="#programm">Program</a>
+      <a href="#technik">Tehnika</a>
+      <a href="#vertretung">Zastopstvo</a>
+      <a href="#herkunft">Izvor</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="../" onclick="try{localStorage.setItem('jy-lang','de')}catch(e){}">DE</a>
+      <a href="../en/" onclick="try{localStorage.setItem('jy-lang','en')}catch(e){}">EN</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="hero-img">
+      <img src="../assets/umformraum.jpg" alt="Preoblikovalni prostor večstopenjske stiskalnice Jern Yao: orodne postaje in transfer">
+      <div class="cap">Pogled v preoblikovalni prostor večstopenjske stiskalnice.</div>
+    </div>
+    <div class="hero-text">
+      <h1>Večstopenjske stiskalnice za hladno preoblikovanje</h1>
+      <div class="subline">Bolt Formers &middot; Nut Formers &middot; Parts Formers &mdash; Jern Yao, Tainan</div>
+      <div class="lede">
+        <p>Jern Yao izdeluje večstopenjske stiskalnice, ki zmorejo oboje: natančnost velikih imen in ceno, ki se obrestuje v ceni kosa. Po tem načelu dela več kot 5.300 strojev v več kot 40 državah; obdelava komponent, montaža in elektrika nastajajo v celoti v lastni tovarni v Tainanu.</p>
+        <p>Hrbtenico tvorijo stiskalnice za vijake JBF, ki so v tri- in štiristopenjski izvedbi zrasle kot odgovor na ameriški Boltmaker: stroji za vsakdanji kruh vijačarn. Vrh predstavljajo dolgohodne stiskalnice JBP in kratkohodne JNP z do sedmimi stopnjami in 930 tonami sile stiskanja, grajene za zahtevne preoblikovance.</p>
+        <p>Za nemško govoreči trg zastopa tovarno ekskluzivno <strong>Hans Moehling</strong>: svetovanje, projektiranje, nadomestni deli in tehnična pojasnila, po neposrednem kanalu v Tainan.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="programm">
+  <div class="wrap">
+    <div class="eyebrow">Program</div>
+    <h2>Tri serije, eno načelo</h2>
+    <div class="rule"></div>
+    <p class="section-lede">Od dvostopenjskega surovca vijaka do sedemstopenjskega preoblikovanca: vsaka serija pokriva svoje področje v fino stopnjevanih velikostih strojev, dosledno metrično projektirano.</p>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Serija</th><th>Stopnje</th><th>Premer odreza</th><th>Področje</th><th>Hodi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="series">JBF<span class="sub">Bolt Formers</span></td>
+            <td>2&ndash;6</td><td>3&ndash;42 mm</td><td>M3&ndash;M30, dolžina odreza do 480 mm</td><td>do 300 min<sup>&minus;1</sup></td>
+          </tr>
+          <tr>
+            <td class="series">JBP &middot; JNP &middot; JPF<span class="sub">Parts Formers</span></td>
+            <td>5&ndash;7</td><td>7&ndash;45 mm</td><td>Dolžina odreza do 450 mm, sila stiskanja do 930 t</td><td>do 320 min<sup>&minus;1</sup></td>
+          </tr>
+          <tr>
+            <td class="series">JNF &middot; JNL &middot; JNFP &middot; JNFR<span class="sub">Nut Formers</span></td>
+            <td>5&ndash;6</td><td>8&ndash;46 mm</td><td>M3&ndash;M33, tudi long-stroke izvedbe</td><td>do 450 min<sup>&minus;1</sup></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">Razponi po podatkih tovarne; zavezujoč je podatkovni list posameznega modela. Podatkovni listi na zahtevo.</div>
+  </div>
+</section>
+
+<section id="technik">
+  <div class="wrap">
+    <div class="eyebrow">Tehnika</div>
+    <h2>Konstruirano za neprekinjeno obratovanje</h2>
+    <div class="rule"></div>
+    <div class="cols">
+      <div class="col">
+        <h3>V orodnem prostoru</h3>
+        <ul>
+          <li>Sistem hitre menjave QTC: blok pestičev in matric se pripravi in prednastavi zunaj stroja.</li>
+          <li>Fina nastavitev izmetača in prislona v korakih po 0,01&nbsp;mm; HMI z motorno nastavitvijo parametrov.</li>
+          <li>Koncepti z dvigalom za menjavo orodja: celoten blok ali posamezno orodje.</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>V tovarni</h3>
+        <ul>
+          <li>Zasnova s simulacijo preoblikovanja DEFORM-2D/3D in FEM-analizo ogrodja.</li>
+          <li>Polna globina izdelave v Tainanu: obdelava komponent, montaža in elektrika v lastni hiši, brez zunanjih izvajalcev &mdash; ključni deli na lastnih centrih za petstransko rezkanje.</li>
+          <li>Ključne elektro komponente iz Nemčije, Japonske in ZDA; ISO 9001, CE (T&Uuml;V Nord).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="vertretung">
+  <div class="wrap">
+    <div class="eyebrow">Zastopstvo</div>
+    <h2>En sogovornik, en kanal</h2>
+    <div class="rule"></div>
+    <div class="cols">
+      <div class="col">
+        <p class="section-lede" style="margin-top:0">Projektiranje in ponudba, tehnična pojasnila brez ovinkov: povpraševanja gredo od tod neposredno v konstrukcijo v Tainan, odgovori se vračajo preverjeni. Nadomestni deli in servisni primeri tečejo po isti poti, usklajeno iz ene roke. Mandat velja nemškemu govornemu prostoru; kdor pot sem najde od drugod, zato ne bo odslovljen.</p>
+      </div>
+      <div class="col">
+        <ul>
+          <li>Svetovanje iz obratovalne prakse hladnega preoblikovanja, od zasnove do prevzema.</li>
+          <li>Zagon in servis, usklajeno iz ene roke.</li>
+          <li>Ogled delujočih strojev po dogovoru.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="herkunft">
+  <div class="wrap">
+    <div class="eyebrow">Izvor</div>
+    <h2>Kako je prišlo do tega</h2>
+    <div class="rule"></div>
+    <p class="section-lede">Povezava sega v leto 1982: Moehling je te stroje, takrat še pod imenom Tung Kuang, pripeljal v Evropo in spremljal njihovo pot do današnje zrelosti. To delo se tu nadaljuje.</p>
+    <div class="chrono">
+      <div><b>1977</b><span>Tung Kuang, Tainan: prvi stroji pod znamko TK</span></div>
+      <div><b>1982</b><span>Moehling pripelje stroje v Evropo</span></div>
+      <div><b>1993</b><span>ustanovitev Jern Yao Enterprises, Tainan</span></div>
+      <div><b>Danes</b><span>več kot 5.300 strojev v več kot 40 državah</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="kontakt" id="kontakt">
+  <div class="wrap kontakt-inner">
+    <div class="who">
+      <div class="kname">Hans Moehling</div>
+      <div class="krole">Ekskluzivno zastopstvo Jern Yao &middot; nemški govorni prostor</div>
+      <div class="kfacts">Jern Yao Enterprises Co., Ltd. &middot; ustanovljeno 1993, Tainan, Tajvan &middot; ISO 9001 &middot; CE</div>
+    </div>
+    <div class="klines">
+      <b>info@jernyao.de</b><br>
+      <span class="tel">+49&nbsp;171&nbsp;10&nbsp;700&nbsp;10</span><br>
+      LinkedIn: <a href="https://www.linkedin.com/in/hans-m%C3%B6hling-562737443/" rel="noopener">Hans Moehling</a><br>
+      Tovarna: <a href="https://www.jernyao.com" rel="noopener">jernyao.com</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-inner">
+    <div>Zastopstvo Jern Yao za nemški govorni prostor &middot; techno.parts</div>
+  </div>
+  <div class="wrap legal">
+    <details id="impressum">
+      <summary>Kolofon</summary>
+      <p>Hans Moehling &middot; Ekskluzivno zastopstvo Jern Yao Enterprises Co., Ltd. za Nemčijo, Avstrijo in Švico.<br>
+      E-pošta: jernyao@techno.parts &middot; Telefon: +49 171 10 700 10</p>
+    </details>
+    <details id="datenschutz">
+      <summary>Zasebnost</summary>
+      <p>Ta spletna stran ne nastavlja piškotkov, ne uporablja analitičnih orodij in ne zbira osebnih podatkov. Ob obisku pri ponudniku gostovanja nastanejo tehnično pogojeni dnevniki dostopa (IP-naslov, čas, priklicana stran), ki služijo obratovalni varnosti. Ob stiku po e-pošti se posredovani podatki uporabijo izključno za obdelavo povpraševanja.</p>
+    </details>
+  </div>
+</footer>
+
+</body>
+</html>
