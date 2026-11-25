@@ -164,6 +164,8 @@
   .legal{ padding-bottom:36px; display:flex; flex-direction:column; gap:14px; }
 </style>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="b50ac41f-f69c-4005-b9da-eae7ef84e8e9"></script>
+<link rel="stylesheet" href="/assets/auslegung-embed.css">
+<script defer src="/assets/auslegung-embed.js"></script>
 </head>
 <body>
 
@@ -171,6 +173,7 @@
   <div class="wrap mast">
     <img src="../assets/logo.png" alt="Jern Yao">
     <nav>
+      <a href="#auslegung">圖面詢問</a>
       <a href="#programm">產品</a>
       <a href="#technik">技術</a>
       <a href="#vertretung">代理</a>
@@ -199,6 +202,26 @@
     </div>
   </div>
 </div>
+
+<section id="auslegung" class="jy-design-module" aria-labelledby="auslegung-heading">
+  <div class="wrap">
+    <div class="jy-design-intro">
+      <div>
+        <div class="eyebrow">圖面 · 草圖 · 尺寸</div>
+        <h2 id="auslegung-heading">從零件到製造方案</h2>
+        <div class="rule"></div>
+        <p class="section-lede">上傳圖面或草圖，或以尺寸描述您的零件。我們將規劃成形工序、線材直徑及合適的機型。</p>
+      </div>
+      <aside class="jy-design-expert" aria-labelledby="experten-heading">
+        <h3 id="experten-heading">自行規劃製程</h3>
+        <p>自行設定並比較成形工序、線材直徑與機型。</p>
+        <a href="/konfigurator/?lang=zh">專家配置工具</a>
+      </aside>
+    </div>
+    <iframe class="jy-design-frame" data-jy-module src="/auslegung/?lang=zh&amp;embedded=1" title="上傳圖面並透過技術對話制定製造方案" height="1250" loading="lazy"></iframe>
+    <p class="jy-design-links"><a href="/auslegung/?lang=zh">在獨立頁面開啟製程規劃</a><a href="/auslegung/?lang=zh#datenschutz">詢問與技術對話的隱私說明</a></p>
+  </div>
+</section>
 
 <section id="programm">
   <div class="wrap">
@@ -323,6 +346,7 @@
     <details id="datenschutz">
       <summary>隱私聲明</summary>
       <p>本網站不使用 Cookie。流量統計採用 Umami(雲端,歐盟區域),採匿名方式,不辨識個別訪客。瀏覽時,主機服務商基於營運安全記錄技術上必要的存取日誌(IP 位址、時間、所請求頁面)。來信聯絡時,所提供之資料僅用於處理該詢問。</p>
+      <p>圖面詢問與技術對話使用 Cloudflare 進行處理及暫存、Anthropic 進行人工智慧分析，並透過 Resend 通知 Hans。檔案與輸入內容會在送出時傳輸。詢問服務的保存期限為 30 天；已寄出的電子郵件不受此期限影響。<a href="/auslegung/?lang=zh#datenschutz">資料處理與刪除的詳細說明</a>。</p>
     </details>
   </div>
 </footer>
