@@ -164,6 +164,8 @@
   .legal{ padding-bottom:36px; display:flex; flex-direction:column; gap:14px; }
 </style>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="b50ac41f-f69c-4005-b9da-eae7ef84e8e9"></script>
+<link rel="stylesheet" href="/assets/auslegung-embed.css">
+<script defer src="/assets/auslegung-embed.js"></script>
 </head>
 <body>
 
@@ -171,6 +173,7 @@
   <div class="wrap mast">
     <img src="../assets/logo.png" alt="Jern Yao">
     <nav>
+      <a href="#auslegung">Povpraševanje z risbo</a>
       <a href="#programm">Program</a>
       <a href="#technik">Tehnika</a>
       <a href="#vertretung">Zastopstvo</a>
@@ -199,6 +202,26 @@
     </div>
   </div>
 </div>
+
+<section id="auslegung" class="jy-design-module" aria-labelledby="auslegung-heading">
+  <div class="wrap">
+    <div class="jy-design-intro">
+      <div>
+        <div class="eyebrow">Risba · Skica · Mere</div>
+        <h2 id="auslegung-heading">Od izdelka do proizvodnega koncepta</h2>
+        <div class="rule"></div>
+        <p class="section-lede">Naložite risbo ali skico ali opišite izdelek z merami. Razvijemo zaporedje preoblikovanja, določimo premer žice in ustrezne stroje.</p>
+      </div>
+      <aside class="jy-design-expert" aria-labelledby="experten-heading">
+        <h3 id="experten-heading">Za lastno načrtovanje procesa</h3>
+        <p>Sami določite in primerjajte faze preoblikovanja, premere žice in stroje.</p>
+        <a href="/konfigurator/?lang=sl">Konfigurator za strokovnjake</a>
+      </aside>
+    </div>
+    <iframe class="jy-design-frame" data-jy-module src="/auslegung/?lang=sl&amp;embedded=1" title="Naložite risbo in v tehničnem pogovoru razvijte proizvodni koncept" height="1250" loading="lazy"></iframe>
+    <p class="jy-design-links"><a href="/auslegung/?lang=sl">Odpri načrtovanje na ločeni strani</a><a href="/auslegung/?lang=sl#datenschutz">Zasebnost pri povpraševanju in tehničnem pogovoru</a></p>
+  </div>
+</section>
 
 <section id="programm">
   <div class="wrap">
@@ -323,6 +346,7 @@
     <details id="datenschutz">
       <summary>Zasebnost</summary>
       <p>Ta spletna stran ne nastavlja piškotkov. Doseg se meri z orodjem Umami (oblak, regija EU), anonimno in brez prepoznavanja posameznih obiskovalcev. Ob obisku pri ponudniku gostovanja nastanejo tehnično pogojeni dnevniki dostopa (IP-naslov, čas, priklicana stran), ki služijo obratovalni varnosti. Ob stiku po e-pošti se posredovani podatki uporabijo izključno za obdelavo povpraševanja.</p>
+      <p>Za povpraševanja z risbo in tehnični pogovor uporabljamo Cloudflare za obdelavo in začasno hrambo, Anthropic za analizo z umetno inteligenco ter Resend za obvestilo Hansu. Datoteke in vnosi se prenesejo ob oddaji. Storitev za povpraševanja jih hrani 30 dni; ta rok ne velja za že poslano e-pošto. <a href="/auslegung/?lang=sl#datenschutz">Podrobnosti o obdelavi in izbrisu</a>.</p>
     </details>
   </div>
 </footer>

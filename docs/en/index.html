@@ -164,6 +164,8 @@
   .legal{ padding-bottom:36px; display:flex; flex-direction:column; gap:14px; }
 </style>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="b50ac41f-f69c-4005-b9da-eae7ef84e8e9"></script>
+<link rel="stylesheet" href="/assets/auslegung-embed.css">
+<script defer src="/assets/auslegung-embed.js"></script>
 </head>
 <body>
 
@@ -171,6 +173,7 @@
   <div class="wrap mast">
     <img src="../assets/logo.png" alt="Jern Yao">
     <nav>
+      <a href="#auslegung">Drawing enquiry</a>
       <a href="#programm">Range</a>
       <a href="#technik">Technology</a>
       <a href="#vertretung">Representation</a>
@@ -198,6 +201,26 @@
     </div>
   </div>
 </div>
+
+<section id="auslegung" class="jy-design-module" aria-labelledby="auslegung-heading">
+  <div class="wrap">
+    <div class="jy-design-intro">
+      <div>
+        <div class="eyebrow">Drawing · Sketch · Dimensions</div>
+        <h2 id="auslegung-heading">From your part to a manufacturing concept</h2>
+        <div class="rule"></div>
+        <p class="section-lede">Upload a drawing or sketch, or describe your part and its dimensions. We develop the forming sequence, wire diameter and choice of suitable machines.</p>
+      </div>
+      <aside class="jy-design-expert" aria-labelledby="experten-heading">
+        <h3 id="experten-heading">For your own process design</h3>
+        <p>Define and compare forming stages, wire diameters and machines yourself.</p>
+        <a href="/konfigurator/?lang=en">Configurator for experts</a>
+      </aside>
+    </div>
+    <iframe class="jy-design-frame" data-jy-module src="/auslegung/?lang=en&amp;embedded=1" title="Upload a drawing and develop a manufacturing concept in the technical dialogue" height="1250" loading="lazy"></iframe>
+    <p class="jy-design-links"><a href="/auslegung/?lang=en">Open process design on a separate page</a><a href="/auslegung/?lang=en#datenschutz">Privacy for enquiries and technical dialogue</a></p>
+  </div>
+</section>
 
 <section id="programm">
   <div class="wrap">
@@ -322,6 +345,7 @@
     <details id="datenschutz">
       <summary>Privacy</summary>
       <p>This website sets no cookies. Umami (cloud, EU region) is used to measure reach, anonymously and without recognising individual visitors. When pages are retrieved, the hosting provider keeps technically required access logs (IP address, time, page retrieved) for operational security. If you contact us by e-mail, the data you provide is used solely to handle your enquiry.</p>
+      <p>For drawing enquiries and technical dialogue, we use Cloudflare for processing and temporary storage, Anthropic for AI analysis, and Resend to notify Hans. Files and entries are transmitted when you submit them. The enquiry service retains them for 30 days; this period does not apply to emails already sent. <a href="/auslegung/?lang=en#datenschutz">Details of processing and deletion</a>.</p>
     </details>
   </div>
 </footer>

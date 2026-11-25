@@ -165,6 +165,8 @@
   .legal{ padding-bottom:36px; display:flex; flex-direction:column; gap:14px; }
 </style>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="b50ac41f-f69c-4005-b9da-eae7ef84e8e9"></script>
+<link rel="stylesheet" href="/assets/auslegung-embed.css">
+<script defer src="/assets/auslegung-embed.js"></script>
 </head>
 <body>
 
@@ -172,6 +174,7 @@
   <div class="wrap mast">
     <img src="assets/logo.png" alt="Jern Yao">
     <nav>
+      <a href="#auslegung">Zeichnungsanfrage</a>
       <a href="#programm">Programm</a>
       <a href="#technik">Technik</a>
       <a href="#vertretung">Vertretung</a>
@@ -199,6 +202,26 @@
     </div>
   </div>
 </div>
+
+<section id="auslegung" class="jy-design-module" aria-labelledby="auslegung-heading">
+  <div class="wrap">
+    <div class="jy-design-intro">
+      <div>
+        <div class="eyebrow">Zeichnung · Skizze · Maße</div>
+        <h2 id="auslegung-heading">Vom Teil zum Fertigungskonzept</h2>
+        <div class="rule"></div>
+        <p class="section-lede">Laden Sie Ihre Zeichnung oder Skizze hoch oder beschreiben Sie das Teil mit seinen Maßen. Wir erarbeiten Stadienfolge, Drahtdurchmesser und passende Maschinen.</p>
+      </div>
+      <aside class="jy-design-expert" aria-labelledby="experten-heading">
+        <h3 id="experten-heading">Für die eigene Auslegung</h3>
+        <p>Stadienfolge, Drahtdurchmesser und Maschine selbst festlegen und vergleichen.</p>
+        <a href="/konfigurator/?lang=de">Konfigurator für Experten</a>
+      </aside>
+    </div>
+    <iframe class="jy-design-frame" data-jy-module src="/auslegung/?lang=de&amp;embedded=1" title="Zeichnung hochladen und Fertigungskonzept im Fachdialog entwickeln" height="1250" loading="lazy"></iframe>
+    <p class="jy-design-links"><a href="/auslegung/?lang=de">Auslegung auf eigener Seite öffnen</a><a href="/auslegung/?lang=de#datenschutz">Datenschutz für Anfrage und Fachdialog</a></p>
+  </div>
+</section>
 
 <section id="programm">
   <div class="wrap">
@@ -323,6 +346,7 @@
     <details id="datenschutz">
       <summary>Datenschutz</summary>
       <p>Diese Website setzt keine Cookies. Zur Reichweitenmessung dient Umami (Cloud, Region EU), anonym und ohne Wiedererkennung einzelner Besucher. Beim Abruf fallen beim Hostinganbieter technisch bedingte Zugriffsprotokolle an (IP-Adresse, Zeitpunkt, abgerufene Seite), die der Betriebssicherheit dienen. Bei Kontaktaufnahme per E-Mail werden die &uuml;bermittelten Angaben allein zur Bearbeitung der Anfrage verwendet.</p>
+      <p>Für Zeichnungsanfragen und Fachdialog nutzen wir Cloudflare zur Verarbeitung und Zwischenspeicherung, Anthropic für die KI-Auswertung sowie Resend für die Benachrichtigung an Hans. Dateien und Eingaben werden beim Absenden übertragen. Die Aufbewahrung im Anfragedienst beträgt 30 Tage; versandte E-Mails bleiben davon unberührt. <a href="/auslegung/?lang=de#datenschutz">Einzelheiten zur Verarbeitung und Löschung</a>.</p>
     </details>
   </div>
 </footer>

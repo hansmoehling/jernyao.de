@@ -164,6 +164,8 @@
   .legal{ padding-bottom:36px; display:flex; flex-direction:column; gap:14px; }
 </style>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="b50ac41f-f69c-4005-b9da-eae7ef84e8e9"></script>
+<link rel="stylesheet" href="/assets/auslegung-embed.css">
+<script defer src="/assets/auslegung-embed.js"></script>
 </head>
 <body>
 
@@ -171,6 +173,7 @@
   <div class="wrap mast">
     <img src="../assets/logo.png" alt="Jern Yao">
     <nav>
+      <a href="#auslegung">Richiesta da disegno</a>
       <a href="#programm">Programma</a>
       <a href="#technik">Tecnica</a>
       <a href="#vertretung">Rappresentanza</a>
@@ -199,6 +202,26 @@
     </div>
   </div>
 </div>
+
+<section id="auslegung" class="jy-design-module" aria-labelledby="auslegung-heading">
+  <div class="wrap">
+    <div class="jy-design-intro">
+      <div>
+        <div class="eyebrow">Disegno · Schizzo · Dimensioni</div>
+        <h2 id="auslegung-heading">Dal pezzo al processo produttivo</h2>
+        <div class="rule"></div>
+        <p class="section-lede">Caricate un disegno o uno schizzo oppure descrivete il pezzo con le sue dimensioni. Elaboriamo la sequenza di formatura, il diametro del filo e la scelta delle macchine adatte.</p>
+      </div>
+      <aside class="jy-design-expert" aria-labelledby="experten-heading">
+        <h3 id="experten-heading">Per la vostra progettazione</h3>
+        <p>Definite e confrontate in autonomia le fasi di formatura, i diametri del filo e le macchine.</p>
+        <a href="/konfigurator/?lang=it">Configuratore per esperti</a>
+      </aside>
+    </div>
+    <iframe class="jy-design-frame" data-jy-module src="/auslegung/?lang=it&amp;embedded=1" title="Caricare un disegno e sviluppare un processo produttivo nel dialogo tecnico" height="1250" loading="lazy"></iframe>
+    <p class="jy-design-links"><a href="/auslegung/?lang=it">Aprire la progettazione in una pagina separata</a><a href="/auslegung/?lang=it#datenschutz">Privacy per richieste e dialogo tecnico</a></p>
+  </div>
+</section>
 
 <section id="programm">
   <div class="wrap">
@@ -323,6 +346,7 @@
     <details id="datenschutz">
       <summary>Privacy</summary>
       <p>Questo sito non usa cookie. Per misurare la diffusione si impiega Umami (cloud, regione UE), in forma anonima e senza riconoscere i singoli visitatori. Alla consultazione il provider di hosting registra i log di accesso tecnicamente necessari (indirizzo IP, orario, pagina richiesta) a fini di sicurezza operativa. In caso di contatto via e-mail, i dati trasmessi sono usati esclusivamente per evadere la richiesta.</p>
+      <p>Per le richieste da disegno e il dialogo tecnico utilizziamo Cloudflare per l'elaborazione e l'archiviazione temporanea, Anthropic per l'analisi tramite IA e Resend per avvisare Hans. File e dati vengono trasmessi al momento dell'invio. Il servizio conserva le richieste per 30 giorni; questo periodo non si applica alle e-mail già inviate. <a href="/auslegung/?lang=it#datenschutz">Dettagli sul trattamento e sulla cancellazione</a>.</p>
     </details>
   </div>
 </footer>
