@@ -63,6 +63,8 @@
     font-size:12px; letter-spacing:0.14em; text-transform:uppercase;
     color:var(--mid); font-weight:500;
   }
+  .site-languages{ display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  .site-languages a[aria-current="page"]{ color:var(--navy); font-weight:600; text-decoration:underline; text-underline-offset:4px; }
   nav a:hover{ color:var(--navy); text-decoration:none; }
 
   .hero{ display:block; padding-block:64px 56px; }
@@ -179,7 +181,7 @@
       <a href="#vertretung">Representation</a>
       <a href="#herkunft">Heritage</a>
       <a href="#kontakt">Contact</a>
-      <a href="../" onclick="try{localStorage.setItem('jy-lang','de')}catch(e){}">DE</a>
+      <span class="site-languages" role="group" aria-label="Language"><a href="/" lang="de" hreflang="de" title="Deutsch" onclick="try{localStorage.setItem('jy-lang','de');localStorage.setItem('jy-language','de')}catch(e){}">DE</a><a href="/it/" lang="it" hreflang="it" title="Italiano" onclick="try{localStorage.setItem('jy-lang','it');localStorage.setItem('jy-language','it')}catch(e){}">IT</a><a href="/sl/" lang="sl" hreflang="sl" title="Slovenščina" onclick="try{localStorage.setItem('jy-lang','sl');localStorage.setItem('jy-language','sl')}catch(e){}">SL</a><a href="/en/" lang="en" hreflang="en" title="English" aria-current="page" onclick="try{localStorage.setItem('jy-lang','en');localStorage.setItem('jy-language','en')}catch(e){}">EN</a><a href="/zh/" lang="zh" hreflang="zh" title="中文" onclick="try{localStorage.setItem('jy-lang','zh');localStorage.setItem('jy-language','zh')}catch(e){}">中文</a></span>
     </nav>
   </div>
 </header>

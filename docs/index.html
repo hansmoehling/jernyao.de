@@ -10,7 +10,7 @@
 <link rel="alternate" hreflang="sl" href="https://jernyao.de/sl/">
 <link rel="alternate" hreflang="it" href="https://jernyao.de/it/">
 <link rel="alternate" hreflang="zh-Hant" href="https://jernyao.de/zh/">
-<script>try{var l=localStorage.getItem('jy-lang');if(!l){var n=(navigator.language||'').toLowerCase();if(/^sl/.test(n))location.replace('sl/');else if(/^it/.test(n))location.replace('it/');else if(/^zh/.test(n))location.replace('zh/')}}catch(e){}</script>
+<script>(function(){var u=new URL(location.href),chosen=u.searchParams.get('lang'),saved='';try{saved=localStorage.getItem('jy-language')||localStorage.getItem('jy-lang')||'';}catch(e){}var language=chosen||saved||(navigator.language||'de').toLowerCase().split('-')[0];if(!['de','it','sl','en','zh'].includes(language))language='de';if(chosen){try{localStorage.setItem('jy-lang',language);localStorage.setItem('jy-language',language);}catch(e){}}if(language!=='de')location.replace('/'+language+'/'+u.search+u.hash);})();</script>
 <link rel="stylesheet" href="assets/fonts.css">
 <style>
   /* Layout: eine ruhige Mittelspalte, Serifen tragen die Stimme, Grotesk traegt die Daten */
@@ -64,6 +64,8 @@
     font-size:12px; letter-spacing:0.14em; text-transform:uppercase;
     color:var(--mid); font-weight:500;
   }
+  .site-languages{ display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  .site-languages a[aria-current="page"]{ color:var(--navy); font-weight:600; text-decoration:underline; text-underline-offset:4px; }
   nav a:hover{ color:var(--navy); text-decoration:none; }
 
   .hero{ display:block; padding-block:64px 56px; }
@@ -180,7 +182,7 @@
       <a href="#vertretung">Vertretung</a>
       <a href="#herkunft">Herkunft</a>
       <a href="#kontakt">Kontakt</a>
-      <a href="en/" onclick="try{localStorage.setItem('jy-lang','en')}catch(e){}">EN</a>
+      <span class="site-languages" role="group" aria-label="Sprache"><a href="/" lang="de" hreflang="de" title="Deutsch" aria-current="page" onclick="try{localStorage.setItem('jy-lang','de');localStorage.setItem('jy-language','de')}catch(e){}">DE</a><a href="/it/" lang="it" hreflang="it" title="Italiano" onclick="try{localStorage.setItem('jy-lang','it');localStorage.setItem('jy-language','it')}catch(e){}">IT</a><a href="/sl/" lang="sl" hreflang="sl" title="Slovenščina" onclick="try{localStorage.setItem('jy-lang','sl');localStorage.setItem('jy-language','sl')}catch(e){}">SL</a><a href="/en/" lang="en" hreflang="en" title="English" onclick="try{localStorage.setItem('jy-lang','en');localStorage.setItem('jy-language','en')}catch(e){}">EN</a><a href="/zh/" lang="zh" hreflang="zh" title="中文" onclick="try{localStorage.setItem('jy-lang','zh');localStorage.setItem('jy-language','zh')}catch(e){}">中文</a></span>
     </nav>
   </div>
 </header>
