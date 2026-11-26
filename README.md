@@ -5,7 +5,7 @@ Jern Yao by Hans Moehlng
 
 Die fünf Hauptseiten binden `/auslegung/?lang=de&embedded=1` direkt ein und verlinken `/konfigurator/?lang=de`. Entsprechend gelten `en`, `it`, `sl` und `zh`. Beide Module liefern technische Maschinenfunde ohne Maschinenpreise. Der bestehende separate Auftritt auf `jern-yao.de` behält seine Preise.
 
-Die Module werden aus dem gemeinsamen Rechenkern und der Oberfläche im Repository [hansmoehling/jern-yao.de](https://github.com/hansmoehling/jern-yao.de) erzeugt. Dort zuerst `python quelle/bauen.py`, danach `python quelle/integration_bauen.py <dieser Checkout>/docs` ausführen. Der Export entfernt die Preisdaten aus dem Maschinenkatalog, erhält seine Rangfolge und deaktiviert die Preisausgabe einschließlich Druck und E-Mail. Keine Schlüssel oder privaten Wissensdateien gehören in dieses Repository.
+Die Module werden aus dem gemeinsamen Rechenkern und der Oberfläche im Repository [hansmoehling/jern-yao.de](https://github.com/hansmoehling/jern-yao.de) erzeugt. Dort zuerst `python quelle/bauen.py`, danach `python quelle/integration_bauen.py <dieser Checkout>/docs` ausführen. Der Export entfernt die Preisdaten aus dem Maschinenkatalog, sortiert ihn alphabetisch und deaktiviert die Preisausgabe einschließlich Druck und E-Mail. Die wirtschaftliche Rangfolge wird serverseitig bestimmt; öffentlich bleiben nur gerundete relative Vergleiche. Keine Schlüssel oder privaten Wissensdateien gehören in dieses Repository.
 
 Der vorhandene Cloudflare-Dienst bestimmt die Preisfreigabe zusätzlich serverseitig anhand der Herkunft und speichert sie bei Anfragen. Upload, Queue, Analyse, Folgechat und Status verwenden dieselbe Vorgabe. Die öffentliche Dienstadresse steht im erzeugten Modul; die Zugänge bleiben ausschließlich im Dienst.
 
